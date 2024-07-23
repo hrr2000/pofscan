@@ -9,78 +9,79 @@ import {FaGraduationCap} from 'react-icons/fa'
 import {MdBusinessCenter} from 'react-icons/md'
 
 export default function Home() {
-
   return (
     <main className="grid grid-cols-12 min-h-[900px] max-w-[1580px] mx-auto text-gray-200 w-full h-screen">
-      <div className="relative hidden lg:block lg:col-span-4 xl:col-span-3 p-8">
-        <div className="fixed flex justify-end">
-          <div className="border-[1px] rounded-3xl border-primary p-10 lg:max-w-[350px] max-w-[300px]">
-          <div className="w-full flex justify-between items-end">
-            <div className="flex flex-col w-full">
-              <span className="text-lg">{"Hello, I'm"}</span>
-              <h2 className="text-3xl font-normal">
-                Mostafa
-                <span className={`ms-3`}>Reda</span>
-              </h2>
+      <div className="relative hidden lg:block lg:col-span-4 xl:col-span-3 px-8">
+        <div className="flex items-center justify-end h-screen fixed">
+          <div className="flex justify-end">
+            <div className="border-[1px] rounded-3xl border-primary p-10 lg:max-w-[350px] max-w-[300px]">
+            <div className="w-full flex justify-between items-end">
+              <div className="flex flex-col w-full">
+                <span className="text-lg">{"Hello, I'm"}</span>
+                <h2 className="text-3xl font-bold">
+                  Mostafa
+                  <span className={`ms-3`}>Reda</span>
+                </h2>
+              </div>
             </div>
-          </div>
-          <span className="">
-            A Software Engineer
-          </span>
-          <div>
-            <figure className="relative h-[300px] w-full rounded-3xl overflow-hidden my-8">
-              <Image
-                draggable="false"
-                className="grayscale -mt-3"
-                src="/images/avatar-2.png"
-                alt="avatar"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="top"
-              />
-            </figure>
-          </div>
-          <div className="flex flex-col text-lg items-start">
-            <h4 className="font-normal text-gray-100 flex items-center gap-2">
-              <HiMail />
-              mstfa.rda.2001@gmail.com
-            </h4>
-            <h4 className="font-normal text-gray-100 flex items-center gap-2">
-              <TiLocation />
-              Helwan - Cairo - Egypt
-            </h4>
-          </div>
-          <div>
-            <button className="w-full py-2 px-4 rounded-lg flex items-center gap-2 justify-center mt-6 bg-green-400 text-gray-900 text-xl font-normal hover:bg-green-600 transition">
-              <BsFillChatFill />
-              {"Let's Chat!"}
-            </button>
-          </div>
+            <span className="">
+              A Software Engineer
+            </span>
+            <div>
+              <figure className="relative h-[300px] w-full rounded-3xl overflow-hidden my-8">
+                <Image
+                  draggable="false"
+                  className="grayscale -mt-3"
+                  src="/images/avatar-2.png"
+                  alt="avatar"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="top"
+                />
+              </figure>
+            </div>
+            <div className="flex flex-col text-lg items-start">
+              <h4 className="font-normal text-gray-100 flex items-center gap-2">
+                <HiMail />
+                mstfa.rda.2001@gmail.com
+              </h4>
+              <h4 className="font-normal text-gray-100 flex items-center gap-2">
+                <TiLocation />
+                Helwan - Cairo - Egypt
+              </h4>
+            </div>
+            <div>
+              <button className="w-full py-2 px-4 rounded-lg flex items-center gap-2 justify-center mt-6 bg-green-400 text-gray-900 text-xl font-normal hover:bg-green-600 transition">
+                <BsFillChatFill />
+                {"Let's Chat!"}
+              </button>
+            </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="col-span-12 lg:col-span-7 p-4 py-10 lg:p-10">
-        <div className="lg:py-32">
+      <div className="col-span-12 lg:col-span-7 p-4 lg:px-10">
+        <section  className="min-h-screen flex flex-col justify-center">
           <span className="text-gray-300 border-[1px] px-5 border-primary py-1 rounded-full text-sm flex items-center gap-2 w-fit">
             <AiFillHome />
             INTRODUCE
           </span>
-          <h3 className="text-5xl lg:text-7xl font-thin my-4 px-2 leading-snug">
-            Say Hi from <span className="text-green-400"> Mostafa Reda </span>, Software Engineer and Typist...
+          <h3 className="text-5xl lg:text-7xl my-4 px-2 leading-snug font-bold">
+            Say Hi from <span className="text-green-400"> Mostafa Reda</span>, Software Engineer and Typist...
           </h3>
           <div className="py-5 px-2">
-            <p className="text-secondary text-xl font-thin">
+            <p className="text-secondary text-xl">
               Mostafa has been building software programs since 2015 and has been working in the software industry since 2018. He has experience in CMS, blogs, websites, and B2B multi-tenancy projects and is focused on creating high-quality, efficient, reliable, and maintainable applications.
             </p>
           </div>
-        </div>
-        <div id="education" className="py-52">
+        </section>
+        <section id="education" className="min-h-screen flex flex-col justify-center">
           <span className="text-gray-300 border-[1px] px-5 border-primary py-1 rounded-full text-sm flex items-center gap-2 w-fit">
             <FaGraduationCap />
             EDUCATION
           </span>
           <div className="py-5 px-2">
-            <h3 className="font-normal text-4xl">
+            <h3 className="text-4xl font-bold">
                 Helwan <span className="text-green-400"> University </span>
             </h3>
             <p>
@@ -90,8 +91,7 @@ export default function Home() {
               <span> Computer Science</span>
             </p>
             <hr className="border-2 border-green-400 w-16 my-4" />
-            <p className="text-secondary text-xl font-thin">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque velit id facilis culpa consectetur maiores explicabo exercitationem, illo deleniti ad tenetur porro reprehenderit veniam magni laboriosam? Fugiat nostrum vero numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consequatur cupiditate numquam, tenetur excepturi expedita incidunt porro distinctio quo eos omnis consectetur cumque corrupti soluta ratione deleniti molestiae. Eveniet, commodi.
+            <p className="text-secondary text-xl">
             </p>
             <div className="my-4 flex flex-wrap gap-4">
               <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
@@ -132,15 +132,15 @@ export default function Home() {
               </span>
             </div>
           </div>
-        </div>
-        <div id="experience" className="py-40">
+        </section>
+        <section id="experience" className="min-h-screen flex flex-col justify-center">
           <span className="text-gray-300 border-[1px] px-5 border-primary py-1 rounded-full text-sm flex items-center gap-2 w-fit">
             <MdBusinessCenter />
             EXPERIENCE
           </span>
           <div className="mb-10 flex flex-col gap-10">
             <div className="py-5 px-2">
-              <h3 className="font-normal text-4xl mb-2">
+              <h3 className="text-4xl mb-2 font-bold">
                   Software Engineer Intern  <span className="text-green-400">@ Microsoft </span>
               </h3>
               <div className="text-xl flex items-center gap-6">
@@ -152,7 +152,7 @@ export default function Home() {
                 </span>
               </div>
               <hr className="border-2 border-green-400 w-16 my-4" />
-              <p className="text-secondary text-xl font-thin">
+              <p className="text-secondary text-xl">
                 Developed a new debugging tool for the KED team that significantly improved their efficiency in debugging by summarizing days in just a few clicks. Focused on optimizing performance for handling large files and datasets.
               </p>
               <div className="my-4 flex flex-wrap gap-4">
@@ -171,7 +171,7 @@ export default function Home() {
               </div>
             </div>
             <div className="py-5 px-2">
-              <h3 className="font-normal text-4xl mb-2">
+              <h3 className="text-4xl mb-2 font-bold">
                 Software Engineer <span className="text-green-400"> @ Bld.ai </span>
               </h3>
               <div className="text-xl flex items-center gap-6">
@@ -183,7 +183,7 @@ export default function Home() {
                 </span>
               </div>
               <hr className="border-2 border-green-400 w-16 my-4" />
-              <p className="text-secondary text-xl font-thin">
+              <p className="text-secondary text-xl">
                 I have acquired proficiency in the primary technology stacks utilized by the company, including React, React Native, and Django, through my involvement in various internal projects.
               </p>
               <div className="my-4 flex flex-wrap gap-4">
@@ -211,7 +211,7 @@ export default function Home() {
               </div>
             </div>
             <div className="py-5 px-2">
-              <h3 className="font-normal text-4xl mb-2">
+              <h3 className="text-4xl mb-2 font-bold">
                 Software Engineer <span className="text-green-400"> @ Soft Kinetics </span>
               </h3>
               <div className="text-xl flex items-center gap-6">
@@ -223,7 +223,7 @@ export default function Home() {
                 </span>
               </div>
               <hr className="border-2 border-green-400 w-16 my-4" />
-              <p className="text-secondary text-xl font-thin">
+              <p className="text-secondary text-xl">
                 Designed and developed an e-commerce website using NextJs The website features a shopping cart that supports multiple stores, themes, currencies, and languages. It also includes a rewards system, and advanced search and filtering functionalities.
               </p>
               <div className="my-4 flex flex-wrap gap-4">
@@ -251,7 +251,7 @@ export default function Home() {
               </div>
             </div>
             <div className="py-5 px-2">
-              <h3 className="font-normal text-4xl mb-2">
+              <h3 className="text-4xl mb-2 font-bold">
                 Freelancer <span className="text-green-400"> @ Self Employed </span>
               </h3>
               <div className="text-xl flex items-center gap-6">
@@ -263,7 +263,7 @@ export default function Home() {
                 </span>
               </div>
               <hr className="border-2 border-green-400 w-16 my-4" />
-              <p className="text-secondary text-xl font-thin">
+              <p className="text-secondary text-xl">
                 Completed a diverse range of projects and tasks on Freelancer, consistently achieving a 5-star rating. Developed strong communication skills, enabling me to effectively extract and organize client requirements into detailed project plans with clear timelines and feature lists. I also have experience writing contracts with SRS (Software Requirements Specification) documentation.
               </p>
               <div className="my-4 flex flex-wrap gap-4">
@@ -303,7 +303,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
       <div className="col-span-1 p-10 flex flex-col items-center">
         <div className="border-[1px] text-xl bg-primary rounded-3xl border-primary text-secondary p-4 py-4 lg:py-8 w-fit fixed bottom-10 lg:bottom-auto left-1/2 lg:left-auto -translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 flex lg:flex-col gap-7">
@@ -322,26 +322,26 @@ export default function Home() {
   );
 }
 
-function AuthShowcase() {
-  const { data: sessionData } = useSession();
+// function AuthShowcase() {
+//   const { data: sessionData } = useSession();
 
-  const { data: secretMessage } = api.example.getSecretMessage.useQuery(
-    undefined, // no input
-    { enabled: sessionData?.user !== undefined }
-  );
+//   const { data: secretMessage } = api.example.getSecretMessage.useQuery(
+//     undefined, // no input
+//     { enabled: sessionData?.user !== undefined }
+//   );
 
-  return (
-    <div className="flex flex-col items-center justify-center gap-4">
-      <p className="text-center text-2xl text-white">
-        {sessionData && <span>Logged in as {sessionData.user?.name}</span>}
-        {secretMessage && <span> - {secretMessage}</span>}
-      </p>
-      <button
-        className="rounded-full bg-white/10 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20"
-        onClick={sessionData ? () => void signOut() : () => void signIn()}
-      >
-        {sessionData ? "Sign out" : "Sign in"}
-      </button>
-    </div>
-  );
-}
+//   return (
+//     <div className="flex flex-col items-center justify-center gap-4">
+//       <p className="text-center text-2xl text-white">
+//         {sessionData && <span>Logged in as {sessionData.user?.name}</span>}
+//         {secretMessage && <span> - {secretMessage}</span>}
+//       </p>
+//       <button
+//         className="rounded-full bg-white/10 px-10 py-3 font-semibold text-white no-underline transition hover:bg-white/20"
+//         onClick={sessionData ? () => void signOut() : () => void signIn()}
+//       >
+//         {sessionData ? "Sign out" : "Sign in"}
+//       </button>
+//     </div>
+//   );
+// }

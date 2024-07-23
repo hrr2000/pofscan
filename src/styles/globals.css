@@ -9,3 +9,7 @@ html, body {
 body {
   @apply bg-primary
 }
+
+:target {
+  scroll-margin-top: 50px;
+}
