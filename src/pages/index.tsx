@@ -8,6 +8,12 @@ import {AiFillHome} from 'react-icons/ai'
 import {FaGraduationCap} from 'react-icons/fa'
 import {MdBusinessCenter} from 'react-icons/md'
 
+const experiences = [
+  {
+    
+  }
+]
+
 export default function Home() {
   return (
     <main className="grid grid-cols-12 min-h-[900px] max-w-[1580px] mx-auto text-gray-200 w-full h-screen">
@@ -67,12 +73,11 @@ export default function Home() {
             INTRODUCE
           </span>
           <h3 className="text-5xl lg:text-7xl my-4 px-2 leading-snug font-bold">
-            Say Hi from <span className="text-green-400"> Mostafa Reda</span>, Software Engineer and Typist...
+            Hi from <span className="text-green-400"> Mostafa Reda</span>, A Software Engineer and Typist!
           </h3>
           <div className="py-5 px-2">
             <p className="text-secondary text-xl">
-              Mostafa has been building software programs since 2015 and has been working in the software industry since 2018. He has experience in CMS, blogs, websites, and B2B multi-tenancy projects and is focused on creating high-quality, efficient, reliable, and maintainable applications.
-            </p>
+            Mostafa has been working in the software industry since 2018. He prioritizes non-functional requirements as first-class citizens in software development. While he employs logic to write code, he leverages appropriate philosophies to build software that solves problems and generates ROI.            </p>
           </div>
         </section>
         <section id="education" className="min-h-screen flex flex-col justify-center">
