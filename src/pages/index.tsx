@@ -8,11 +8,177 @@ import {AiFillHome} from 'react-icons/ai'
 import {FaGraduationCap} from 'react-icons/fa'
 import {MdBusinessCenter} from 'react-icons/md'
 
+const educations = [
+  {
+    university: "Helwan University",
+    degree: "Bachelor Degree",
+    major: "Computer Science",
+    skills: [
+      'NextJs',
+      'Tailwind',
+      'AWS',
+      'Firebase',
+      'tRPC',
+      'Java',
+      'JavaFX',
+      'C',
+      'MATLAB',
+      'Python',
+      'AI',
+      'ML',
+    ]
+  }
+];
+
 const experiences = [
   {
-    
+    logo: "/images/logos/taza.png",
+    job_title: "Software Engineer & Co-founder",
+    company_name: "Taza",
+    duration: "7 months",
+    start_date: "Dec 2023",
+    end_date: "Present",
+    address: "Cairo - Egypt",
+    description: "I have spearheaded the creation of a mobile and web platform for the fresh produce market, leveraging AWS cloud for scalable infrastructure and integrating a streamlined SDLC for effective event sourcing and data analysis. Assembled and led a high-performing team to drive business objectives, overseeing comprehensive market operations including suppliers, traders, exports, and imports, ensuring high-quality and timely service delivery.",
+    skills: [
+      'Typescript',
+      'ReactJs',
+      'Redux',
+      'React Query',
+      'NextJs',
+      'Tailwind',
+      'React Native',
+      'Nativewind', 
+      'Expo',
+      'AWS',
+      'S3',
+      'EC2',
+      'Docker',
+      'Docker Compose',
+      'Nginx',
+      'Django',
+      'Postgres',
+      'Gunicorn',
+      'Python',
+      'Jira',
+      'Git & Github'
+    ]
+  },
+  {
+    logo: "/images/logos/cacao.png",
+    job_title: "Software Engineer",
+    company_name: "Cacao Systems",
+    duration: "1 year",
+    start_date: "Aug 2023",
+    end_date: "Present",
+    address: "Remote - Canada",
+    description: "Crafted an enterprise software solution tailored for businesses, optimizing operational efficiency and boosting productivity in mass operations by engineering a user experience precisely aligned with client needs. Implemented a Monorepo structure for housing a core frontend library for reusable components across applications and an external framework like Streamlit, allowing AI team interaction with frontend components through Python, fostering collaboration and flexibility. Designed and integrated a shared state management logic, ensuring modularity and consistency while allowing flexibility for individual application evolution.",
+    skills: [
+      'ReactJs',
+      'MUI',
+      'Typescript',
+      'Redux',
+      'RTK Query',
+      'PdfJs',
+      'Python',
+      'Streamlit',
+      'ElectronJs',
+      'Monorepo',
+      'Nx',
+      'Docker',
+      'Docker Compose',
+      'Fluentd',
+      'Grafana',
+      'Postgres',
+      'FastAPI',
+      'Starlette',
+      'Apache HTTP',
+      'AWS',
+      'S3',
+      'Jira',
+      'Git & Github'
+    ]
+  },
+  {
+    logo: "/images/logos/microsoft.png",
+    job_title: "Software Engineer Intern",
+    company_name: "Microsoft",
+    duration: "2 months",
+    start_date: "Jul 2022",
+    end_date: "Sep 2022",
+    address: "Zamalek - Egypt",
+    description: "Developed a debugging tool using React that significantly improved their efficiency in debugging by summarizing days of work in just a few clicks. Focused on optimizing performance for handling large files and datasets for better productivity and developer experience.",
+    skills: [
+      'ReactJs',
+      'Tailwind',
+      'Typescript',
+      'Microsoft Azure',
+    ]
+  },
+  {
+    logo: "/images/logos/bld.png",
+    job_title: "Software Engineer",
+    company_name: "BLD.AI",
+    duration: "4 months",
+    start_date: "May 2022",
+    end_date: "Sep 2022",
+    address: "Remote - USA",
+    description: "I have acquired proficiency in the primary technology stacks utilized by the company, including React, React Native, and Django, through my involvement in various internal projects.",
+    skills: [
+      'ReactJs',
+      'React Native',
+      'NextJs',
+      'Tailwind',
+      'Django',
+      'AWS',
+      'Web3',
+    ]
+  },
+  {
+    logo: "/images/logos/sand.png",
+    job_title: "Frontend Developer",
+    company_name: "Soft Kinetics",
+    duration: "6 months",
+    start_date: "Dec 2021",
+    end_date: "May 2022",
+    address: "Masr El Gdida - Egypt",
+    description: "Designed and developed an e-commerce web app for a big cards provider in the Middle East, using NextJs the app features a shopping cart that supports multiple stores, themes, currencies, and languages. It also includes a rewards system, and advanced search and filtering functionalities.",
+    skills: [
+      'ReactJs',
+      'NextJs',
+      'Tailwind',
+      'Laravel',
+      'Wordpress',
+      'Github Actions',
+      'Jira',
+      'Git & Github'
+    ]
+  },
+  {
+    logo: "/images/logos/los.png",
+    job_title: "Full-stack Developer",
+    company_name: "LOS DC",
+    duration: "+30 clients",
+    start_date: "Jul 2019",
+    end_date: "Jan 2022",
+    address: "Remote - Jordan",
+    description: "Demonstrated expertise in delivering software solutions across diverse sectors, ensuring alignment with industry standards and exceeding client expectations. Successfully deployed software systems capable of accommodating hundreds of concurrent users, attaining optimal performance and reliability. Developed complex B2B software applications that seamlessly operate across multiple platforms, enhancing cross-functional efficiency and productivity.",
+    skills: [
+      'ReactJs',
+      'React Native',
+      'NextJs',
+      'Tailwind',
+      'MUI',
+      'Laravel',
+      'Wordpress',
+      'jQuery',
+      'Github Actions',
+      'AWS',
+      'Firebase',
+    ]
   }
-]
+];
+
 
 export default function Home() {
   return (
@@ -85,58 +251,33 @@ export default function Home() {
             <FaGraduationCap />
             EDUCATION
           </span>
-          <div className="py-5 px-2">
-            <h3 className="text-4xl font-bold">
-                Helwan <span className="text-green-400"> University </span>
-            </h3>
-            <p>
-              <strong>
-                Bachelor Degree
-              </strong>
-              <span> Computer Science</span>
-            </p>
-            <hr className="border-2 border-green-400 w-16 my-4" />
-            <p className="text-secondary text-xl">
-            </p>
-            <div className="my-4 flex flex-wrap gap-4">
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                NextJs
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                Tailwind
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                AWS
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                Firebase
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                tRPC
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                Java
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                JavaFX
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                C
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                MATLAP
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                Python
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                AI
-              </span>
-              <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                ML
-              </span>
-            </div>
-          </div>
+          {educations.map((education, idx) => {
+            return (
+              <div key={`education_${education.university}_${idx}`} className="py-5 px-2">
+                <h3 className="text-4xl font-bold">
+                    {education.university} <span className="text-green-400"> University </span>
+                </h3>
+                <p>
+                  <strong>
+                    {education.degree}
+                  </strong>
+                  <span> {education.major}</span>
+                </p>
+                <hr className="border-2 border-green-400 w-16 my-4" />
+                <p className="text-secondary text-xl">
+                </p>
+                <div className="my-4 flex flex-wrap gap-4">
+                  {education.skills.map((skill) => {
+                    return (
+                      <span key={`education_skill_${skill}`} className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
+                        {skill}
+                      </span>
+                    )
+                  })}
+                </div>
+              </div>
+            )
+          })}
         </section>
         <section id="experience" className="min-h-screen flex flex-col justify-center">
           <span className="text-gray-300 border-[1px] px-5 border-primary py-1 rounded-full text-sm flex items-center gap-2 w-fit">
@@ -144,169 +285,49 @@ export default function Home() {
             EXPERIENCE
           </span>
           <div className="mb-10 flex flex-col gap-10">
-            <div className="py-5 px-2">
-              <h3 className="text-4xl mb-2 font-bold">
-                  Software Engineer Intern  <span className="text-green-400">@ Microsoft </span>
-              </h3>
-              <div className="text-xl flex items-center gap-6">
-                <span>
-                  <strong className="text-green-400"> 2 months </strong> Jul 2022 – Sep 2022
-                </span> 
-                <span>
-                  @ Zamalek - Egypt
-                </span>
-              </div>
-              <hr className="border-2 border-green-400 w-16 my-4" />
-              <p className="text-secondary text-xl">
-                Developed a new debugging tool for the KED team that significantly improved their efficiency in debugging by summarizing days in just a few clicks. Focused on optimizing performance for handling large files and datasets.
-              </p>
-              <div className="my-4 flex flex-wrap gap-4">
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  ReactJs
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Tailwind
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Typescript
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Microsoft Azure
-                </span>
-              </div>
-            </div>
-            <div className="py-5 px-2">
-              <h3 className="text-4xl mb-2 font-bold">
-                Software Engineer <span className="text-green-400"> @ Bld.ai </span>
-              </h3>
-              <div className="text-xl flex items-center gap-6">
-                <span>
-                  <strong className="text-green-400"> 4 months </strong> May 2022 - Sep 2022 
-                </span> 
-                <span>
-                  @ Remote - USA
-                </span>
-              </div>
-              <hr className="border-2 border-green-400 w-16 my-4" />
-              <p className="text-secondary text-xl">
-                I have acquired proficiency in the primary technology stacks utilized by the company, including React, React Native, and Django, through my involvement in various internal projects.
-              </p>
-              <div className="my-4 flex flex-wrap gap-4">
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  ReactJs
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  React Native
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  NextJs
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Tailwind
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Django
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  AWS
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Web3
-                </span>
-              </div>
-            </div>
-            <div className="py-5 px-2">
-              <h3 className="text-4xl mb-2 font-bold">
-                Software Engineer <span className="text-green-400"> @ Soft Kinetics </span>
-              </h3>
-              <div className="text-xl flex items-center gap-6">
-                <span>
-                  <strong className="text-green-400"> 6 months </strong> Dec 2021 – May 2022
-                </span> 
-                <span>
-                  @ Masr El gdida - Egypt
-                </span>
-              </div>
-              <hr className="border-2 border-green-400 w-16 my-4" />
-              <p className="text-secondary text-xl">
-                Designed and developed an e-commerce website using NextJs The website features a shopping cart that supports multiple stores, themes, currencies, and languages. It also includes a rewards system, and advanced search and filtering functionalities.
-              </p>
-              <div className="my-4 flex flex-wrap gap-4">
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  ReactJs
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  NextJs
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Tailwind
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Laravel
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Wordpress
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Github Actions
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Jira
-                </span>
-              </div>
-            </div>
-            <div className="py-5 px-2">
-              <h3 className="text-4xl mb-2 font-bold">
-                Freelancer <span className="text-green-400"> @ Self Employed </span>
-              </h3>
-              <div className="text-xl flex items-center gap-6">
-                <span>
-                  <strong className="text-green-400"> +30 clients </strong>Jul 2019 – Current
-                </span> 
-                <span>
-                  @ Remote - Global
-                </span>
-              </div>
-              <hr className="border-2 border-green-400 w-16 my-4" />
-              <p className="text-secondary text-xl">
-                Completed a diverse range of projects and tasks on Freelancer, consistently achieving a 5-star rating. Developed strong communication skills, enabling me to effectively extract and organize client requirements into detailed project plans with clear timelines and feature lists. I also have experience writing contracts with SRS (Software Requirements Specification) documentation.
-              </p>
-              <div className="my-4 flex flex-wrap gap-4">
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  ReactJs
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  React Native
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  NextJs
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Tailwind
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  MUI
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Laravel
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Wordpress
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  jQuery
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Github Actions
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  AWS
-                </span>
-                <span className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
-                  Firebase
-                </span>
-              </div>
-            </div>
+            {experiences.map((experience, idx) => {
+              return (
+                <div key={`experience_${experience.company_name}_${idx}`} className="py-5 px-2">
+                  <div className="flex gap-4">
+                    <div>
+                      <Image 
+                        src={experience.logo}
+                        height={100}
+                        width={100} 
+                        className="w-[100px] h-[100px] rounded-lg"
+                        alt={""}
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-4xl mb-2 font-bold">
+                          {experience.job_title}  <span className="text-green-400">@ {experience.company_name} </span>
+                      </h3>
+                      <div className="text-xl flex items-center gap-6">
+                        <span>
+                          <strong className="text-green-400"> {experience.duration} </strong> {experience.start_date} – {experience.end_date}
+                        </span> 
+                        <span>
+                          @ {experience.address}
+                        </span>
+                      </div>
+                      <hr className="border-2 border-green-400 w-16 my-4" />
+                    </div>
+                  </div>
+                  <p className="text-secondary text-xl">
+                    {experience.description}
+                  </p>
+                  <div className="my-4 flex flex-wrap gap-4">
+                    {experience.skills.map((skill) => {
+                      return (
+                        <span key={`experience_skill_${skill}`} className="text-gray-300 border-[1px] px-2 py-1 rounded-lg text-xl border-gray-400">
+                          {skill}
+                        </span>
+                      )
+                    })}
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </section>
       </div>
