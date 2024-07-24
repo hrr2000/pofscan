@@ -288,8 +288,8 @@ export default function Home() {
             {experiences.map((experience, idx) => {
               return (
                 <div key={`experience_${experience.company_name}_${idx}`} className="py-5 px-2">
-                  <div className="flex gap-4">
-                    <div>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="min-w-[100px] min-h-[100px]">
                       <Image 
                         src={experience.logo}
                         height={100}
